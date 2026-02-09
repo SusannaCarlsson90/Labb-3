@@ -1,22 +1,30 @@
-nav {
+$color-bg: #fdfaf7;       // Kräm färg
+$color-main: #ffffff;     // Vit
+$color-text: #2c1a12;     // Mörkbrun espresso-svart 
+$color-accent: #6f4e37;   // Klassisk kaffe-brun
+$color-header: #f5ebe0; //Havremjölk 
+
+nav { //nästlar nav
   display: flex;
   gap: 1.8rem;
-}
 
-nav a {
-  color: black;
+a {
+  color:$color-text;
   text-decoration: none;
   font-size: 1.1rem;
+
+&:hover {
+  text-decoration: underline;
+ 
 }
 
-nav a:hover {
-  text-decoration: underline;
-}
 
-nav a.active {
+&.active {
   text-decoration: underline;
-  text-decoration-thickness: 2px; /* Gör linjen lite kraftigare */
- font-weight: bold;              /* Gör texten fet för ökad tydlighet*/
+  text-decoration-thickness: 2px;
+  font-weight: bold;
+}
+}
 }
 
 .hamburger {
@@ -25,12 +33,12 @@ nav a.active {
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
-  color: black;
+  color: $color-text;
   margin-left: auto;
 }
 
 header {
-  background-color: #957C62;
+  background-color: $color-header;
   padding: 1.25rem 2.5rem;
   display: flex;
   justify-content: space-between;
@@ -43,12 +51,30 @@ header {
   display: block;
 }
 
-body {
-
+.hero {
+  background-image: url('/public/coffeebeans.jpg');
+  height: 60vh;           
+  background-size: cover;  
+  background-position: center; 
+  display: flex;
+  align-items: center;     /* Centrerar texten vertikalt */
+  justify-content: center; /* Centrerar texten horisontellt */
+  color: white;            /* Gör texten vit så den syns mot bönorna */
 }
 
+body {
+  background-color: #fdfaf7; 
+  color: #2c1a12;            
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
 main {
-
+  background-color: #ffffff; 
+  max-width: 65ch;         
+  margin: 20px auto;         // Centrerar main
+  padding: 40px;
+  border-radius: 8px;        // Runda hörn
+  
 }
 
 footer {
