@@ -1,44 +1,16 @@
-$color-bg: #fdfaf7;       // Kräm färg
-$color-main: #ffffff;     // Vit
-$color-text: #2c1a12;     // Mörkbrun espresso-svart 
-$color-accent: #6f4e37;   // Klassisk kaffe-brun
-$color-header: #f5ebe0; //Havremjölk 
+//Bas (variabler, resets, mixins) - Måste ligga först!
+@use 'base';
 
-nav { //nästlar nav
-  display: flex;
-  gap: 1.8rem;
+//Layout (header, footer, grid)
+@use 'layout';
 
-a {
-  color:$color-text;
-  text-decoration: none;
-  font-size: 1.1rem;
-
-&:hover {
-  text-decoration: underline;
- 
-}
+//Komponenter (knappar, kort, osv)
+@use 'components';
 
 
-&.active {
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  font-weight: bold;
-}
-}
-}
-
-.hamburger {
-  display: none; /* Dold som standard på desktop */
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-  color: $color-text;
-  margin-left: auto;
-}
 
 header {
-  background-color: $color-header;
+  background-color: base.$color-header;
   padding: 1.25rem 2.5rem;
   display: flex;
   justify-content: space-between;
@@ -59,18 +31,19 @@ header {
   display: flex;
   align-items: center;     /* Centrerar texten vertikalt */
   justify-content: center; /* Centrerar texten horisontellt */
-  color: white;            /* Gör texten vit så den syns mot bönorna */
+  color: base.$color-main;
+  text-align: center;
 }
 
 body {
-  background-color: #fdfaf7; 
-  color: #2c1a12;            
+  background-color: base.$color-bg; 
+  color: base.$color-text;            
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
 }
 main {
-  background-color: $color-main; 
-  color: $color-text;
+  background-color: base.$color-main; 
+  color: base.$color-text;
   max-width: 80ch;         
   margin: 20px auto;         // Centrerar main
   padding: 40px;
@@ -93,6 +66,20 @@ main {
     object-fit: cover;
     border-radius: 10px;
     }
+
+    .sass-image {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin-top: 2rem;
+      }
+    
+      .sass-image img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 10px;
+        }
     
 footer {
   padding: 1.89rem 2.5rem;
@@ -101,7 +88,7 @@ footer {
  justify-content: space-between;
  align-items: flex-start;
  gap: 1rem;
- background-color: #957C62;
+ background-color: base.$color-header;
  margin-top: 3rem;
  
 }
