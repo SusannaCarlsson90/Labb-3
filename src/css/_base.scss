@@ -4,3 +4,10 @@ $color-main: #ffffff;     // Vit
 $color-text: #2c1a12;     // Mörkbrun espresso-svart 
 $color-accent: #6f4e37;   // Klassisk kaffe-brun
 $color-header: #f5ebe0; //Havremjölk 
+
+@mixin standard-image { //standard för mina bilder 
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}

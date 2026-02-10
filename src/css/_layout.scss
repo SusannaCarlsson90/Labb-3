@@ -1,0 +1,99 @@
+@use 'base';
+
+header {
+  background-color: base.$color-header;
+  padding: 1.25rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.coffee-image {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+  
+
+  img {
+    @include base.standard-image;
+    }
+  }
+
+    .sass-image {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin-top: 2rem;
+      
+    
+      img {
+        @include base.standard-image;
+        }
+      }
+    
+
+footer {
+  padding: 1.89rem 2.5rem;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ align-items: flex-start;
+ gap: 1rem;
+ background-color: base.$color-header;
+ margin-top: 3rem;
+ 
+}
+
+.footer-info p {
+ margin-bottom: 0.5rem;
+ font-size: 1rem;
+ text-align: left;
+}
+
+@media (max-width: 768px) {
+  
+  /* Header och hamburgermeny */
+  header {
+    flex-wrap: wrap;
+    padding: 1rem 1.25rem; /* toppen botten + höger vänster*/
+  }
+  
+  .hamburger {
+    display: block; 
+  }
+  
+  /* Göm menyn tills man klickar */
+  nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+    margin-left: 0; 
+    
+  }
+  
+  nav.active {
+    display: flex;
+  }
+  
+  nav a {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    width: 100%;
+    text-align: center;
+    
+  }
+
+  /* Footer staplas */
+  footer {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  .min-logga {
+    width: 12rem;
+  }
+
+}
