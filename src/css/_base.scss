@@ -1,9 +1,18 @@
-//Variabler för färger
+//Variabler för färger ljust läge
 $color-bg: #fdfaf7;       // Kräm färg
 $color-main: #ffffff;     // Vit
 $color-text: #2c1a12;     // Mörkbrun espresso-svart 
 $color-accent: #6f4e37;   // Klassisk kaffe-brun
 $color-header: #f5ebe0; //Havremjölk 
+
+//Mörkt läge
+$color-dark-bg: #1a120b;      // Mörkare espresso
+$color-dark-text: #f5ebe0;    //Havremjölk
+$color-dark-header: #2c1a12;  // Mörkbrun yta
+$color-dark-accent: #a67c52;  // Ljusare brun 
+
+//Textvariable
+$font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 @mixin standard-image { //standard för mina bilder 
   width: 100%;

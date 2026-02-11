@@ -28,7 +28,7 @@
 body {
   background-color: base.$color-bg; 
   color: base.$color-text;            
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: base.$font-stack;
   margin: 0;
 }
 main {
@@ -38,10 +38,28 @@ main {
   margin: 20px auto;         // Centrerar main
   padding: 40px;
   border-radius: 8px;        // Runda hörn
-  
+  }
 
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: base.$color-dark-bg;
+      color: base.$color-dark-text;
+    }
   
-}
+    header, footer {
+      background-color: base.$color-dark-header;
+      color: base.$color-dark-text;
+    }
+  
+    nav a {
+      color: base.$color-dark-text;
+    }
+
+    .min-logga {
+      filter: invert(1); // Gör min logga vit istället för svart
+     
+    }
+  }
 
 
 

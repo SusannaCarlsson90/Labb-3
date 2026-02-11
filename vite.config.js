@@ -4,6 +4,9 @@ import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 
 export default defineConfig({
   base: "./", //Fick tips om att denna rad säkrar koden och att bilder osv syns
+  css: {
+    devSourcemap: true //aktiverar sourcemap
+  },
   build: {
     rollupOptions: {
       input: {
