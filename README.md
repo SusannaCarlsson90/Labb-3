@@ -1,7 +1,5 @@
-Laboration 3:
+Laboration 3
 
-Här har jag tränat på SASS.
+Länk till min publicerade sida:
 
-Nedan är länken till korrekt sida och min inlämning:
-
-https://labb1-vite.onrender.com/index.html
+https://labb-3.onrender.com/
