@@ -1,13 +1,8 @@
-//Bas (variabler, resets, mixins) - Måste ligga först!
 @use 'base';
 
-
-//Komponenter (knappar, kort, osv)
 @use 'components';
 
-//Layout (header, footer, grid)
 @use 'layout';
-
 
 .min-logga {
   width: 18rem;
@@ -37,11 +32,12 @@ main {
   background-color: base.$color-main; 
   color: base.$color-text;
   max-width: 80ch;         
-  margin: 20px auto;         // Centrerar main
+  margin: 20px auto; // Centrerar main
   padding: 40px;
-  border-radius: 8px;        // Runda hörn
+  border-radius: 8px; // Runda hörn
   }
 
+  //Mörkt tema 
   @media (prefers-color-scheme: dark) {
     body {
       background-color: base.$color-dark-bg;
