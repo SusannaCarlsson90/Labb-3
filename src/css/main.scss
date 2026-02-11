@@ -52,7 +52,10 @@ main {
     nav a {
       color: base.$color-dark-text;
     }
-
+    
+    .hamburger {
+      color: base.$color-dark-text;
+    }
     .min-logga {
       filter: invert(1); // Gör min logga vit istället för svart
      
