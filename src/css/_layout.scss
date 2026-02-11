@@ -1,3 +1,4 @@
+@use 'sass:color';
 @use 'base';
 
 //Inheritance mall för kort 
@@ -56,7 +57,10 @@ color: base.$color-text;
   color: base.$color-dark-text;
   margin: 1rem auto; //centrerar knapp
   @include base.corner-style(true); //Boolen från if/else sats
-}
+
+  &:hover {
+    background-color: color.scale(base.$color-accent, $lightness: -15%); //Lägger till color functions "darken"
+} }
 
 header {
   background-color: base.$color-header;
