@@ -11,9 +11,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
-        foto: resolve(__dirname, "foto.html"),
-        process: resolve(__dirname, "process.html"),
-        pizzabot: resolve(__dirname, "pizzabot.html")
+        SASS: resolve(__dirname, "sass.html")
+  
       }
     }
   },
