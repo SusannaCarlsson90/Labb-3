@@ -20,3 +20,11 @@ $font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   object-fit: cover;
   border-radius: 10px;
 }
+
+@mixin corner-style($round-corner) {
+  @if $round-corner {
+    border-radius: 50px; // Väldigt runda hörn 
+  } @else {
+    border-radius: 8px;  // Bara lite mjuka hörn
+  }
+}
