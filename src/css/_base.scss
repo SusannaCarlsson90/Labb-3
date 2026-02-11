@@ -24,7 +24,7 @@ $font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 @mixin corner-style($round-corner) {
   @if $round-corner {
-    border-radius: 50px; // Väldigt runda hörn 
+    border-radius: 50px; // Runda hörn 
   } @else {
     border-radius: 8px;  // Lätt rundade hörn
   }
