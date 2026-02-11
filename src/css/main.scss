@@ -1,11 +1,13 @@
 //Bas (variabler, resets, mixins) - Måste ligga först!
 @use 'base';
 
-//Layout (header, footer, grid)
-@use 'layout';
 
 //Komponenter (knappar, kort, osv)
 @use 'components';
+
+//Layout (header, footer, grid)
+@use 'layout';
+
 
 .min-logga {
   width: 18rem;

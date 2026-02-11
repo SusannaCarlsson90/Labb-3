@@ -1,4 +1,4 @@
-//Bas (variabler, resets, mixins) - Måste ligga först!
+
 @use 'base';
 
 nav { //nästlar nav
@@ -33,3 +33,5 @@ a {
   color: base.$color-text;
   margin-left: auto;
 }
+
+
