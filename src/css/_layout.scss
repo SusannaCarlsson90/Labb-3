@@ -1,5 +1,7 @@
 @use 'sass:color';
 @use 'base';
+@use 'animations';
+
 
 //Inheritance mall för kort 
 %card-style {
@@ -87,6 +89,13 @@ color: base.$color-text;
 margin-top: 0;
 color: base.$color-text;
 }
+}
+
+.minion img {
+@include base.standard-image;
+animation-name: photoMove;
+animation-duration: 5s;
+animation-iteration-count: infinite;
 }
 
 .btn-read-more {
