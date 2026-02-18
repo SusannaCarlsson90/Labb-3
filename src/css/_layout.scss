@@ -98,6 +98,14 @@ animation-duration: 5s; //längd den håller på
 animation-iteration-count: infinite; //vill ha den hoppandes förevigt
 }
 
+.btn-fun {
+  @extend %button-style; //Stylingen för knappar - inheritance
+ 
+  margin: 1rem auto; //centrerar knapp
+  @include base.corner-style(true); //Boolen från if/else sats
+}
+
+
 .btn-read-more {
   @extend %button-style; //Stylingen för knappar - inheritance
   background-color: base.$color-accent;
