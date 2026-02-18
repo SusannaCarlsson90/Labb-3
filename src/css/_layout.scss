@@ -93,9 +93,9 @@ color: base.$color-text;
 
 .minion img {
 @include base.standard-image;
-animation-name: photoMove;
-animation-duration: 5s;
-animation-iteration-count: infinite;
+animation-name: photoMove; //infogar animationen skapad under animations.scss
+animation-duration: 5s; //längd den håller på
+animation-iteration-count: infinite; //vill ha den hoppandes förevigt
 }
 
 .btn-read-more {
