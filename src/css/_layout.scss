@@ -99,7 +99,7 @@ animation-iteration-count: infinite; //vill ha den hoppandes förevigt
 .btn-fun {
   @extend %button-style; //Stylingen för knappar - inheritance
   margin: 1rem auto; //centrerar knapp
-  @include base.corner-style(false); //Boolen från if/else sats
+  @include base.corner-style(false); //Boolean från if/else sats
   width: 70%;
   height: 15rem;
   display: block;
@@ -115,7 +115,7 @@ animation-iteration-count: infinite; //vill ha den hoppandes förevigt
   background-color: base.$color-accent;
   color: base.$color-dark-text;
   margin: 1rem auto; //centrerar knapp
-  @include base.corner-style(true); //Boolen från if/else sats
+  @include base.corner-style(true); //Boolean från if/else sats
   transition: background-color 0.3s ease;
 
   &:hover {
