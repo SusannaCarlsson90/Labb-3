@@ -24,9 +24,9 @@
     </button>
     
     <nav id="nav-meny">
-      <a href="/index.html" class="active">Hem</a>
+      <a href="/index.html">Hem</a>
       <a href="/sass.html">SASS</a>
-      <a href="/animationer.html">Animationer</a>
+      <a href="/animationer.html" class="active">Animationer</a>
       <a href="#">Kontakt</a>
       <a href="#">Om</a>
     </nav>
@@ -63,8 +63,12 @@
       <img src="/minion.jpg" alt="Minion">
     </picture>
 
-    <button class="btn-fun">Läs mer</button>
-</main>   <script type="module" src="/src/js/main.js"></script>
-  </body>
-  </html>
+    <button class="btn-fun">Konfetti</button>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script> <!--Länk till js-fil som hämtar instruktioner för hur man gör konfetti-->
+  
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>
 
