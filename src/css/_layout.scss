@@ -224,10 +224,26 @@ footer {
     gap: 1.5rem;
     margin-top: 2rem;
   }
-  .info-boxes {
+  .info-boxes{
     display: grid;
     grid-template-columns: 1fr; // 1 kolumn
    
+  }
+
+  .picture-test {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 2rem;
+    padding: 1rem; 
+  
+  img {
+    height: auto;
+    width: 400px;
+    object-fit: cover;
+  }}
+
+  .btn-fun {
+    font-size: 5rem;
   }
 
   /* Footer staplas */
