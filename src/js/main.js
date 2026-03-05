@@ -182,3 +182,9 @@ async function displayMap() {
     map.src = `https://www.openstreetmap.org/export/embed.html?bbox=${lon},${lat},${lon},${lat}&layer=mapnik&marker=${lat},${lon}`;
   }
 }
+
+const searchBtn = document.getElementById("searchBtn");
+
+if (searchBtn) {
+  searchBtn.addEventListener("click", displayMap); //Lägger på eventlyssnare på knappen. Om någon klickar på knappen kör display map
+}
