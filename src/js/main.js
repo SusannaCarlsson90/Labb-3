@@ -151,3 +151,18 @@ async function displayData() {
 
 // Kör funktionen
 displayData();
+
+/**
+ * Hämtar koordinater för en specifik plats via Nominatim API.
+ * @async
+ * @param {string} query - Platsen användaren sökt efter.
+ * @returns {Promise<Array>} En array med platsdata
+ */
+
+async function fetchMap(query) {
+  const response = await fetch(
+    `https://nominatim.openstreetmap.org/search?format=json&q=${query}`
+  );
+  const data = await response.json();
+  return data;
+}
