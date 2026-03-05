@@ -30,7 +30,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //LABORATION 5:
 /**
- * Hämtar data från JSON-filen
+ * Hämtar statistik (kurser och program) från en extern JSON-fil
+ * @returns {Array} en lista med data
  */
 async function fetchData() {
   const response = await fetch(
@@ -41,7 +42,7 @@ async function fetchData() {
 }
 
 /**
- * Funktion som i slutändan skriver ut mina diagram
+ * Funktion som ritar ut statistiken i ett stapeldiagram och cirkeldiagram
  */
 async function displayData() {
   let data = await fetchData();
@@ -156,7 +157,7 @@ displayData();
  * Hämtar koordinater för en specifik plats via Nominatim API.
  * @async
  * @param {string} query - Platsen användaren sökt efter.
- * @returns {Promise<Array>} En array med platsdata
+ * @returns {array} En array med platsdata
  */
 
 async function fetchMap(query) {
