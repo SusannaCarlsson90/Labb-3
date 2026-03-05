@@ -160,9 +160,25 @@ displayData();
  */
 
 async function fetchMap(query) {
+  //argumentet query = sökordet från användaren
   const response = await fetch(
-    `https://nominatim.openstreetmap.org/search?format=json&q=${query}`
+    `https://nominatim.openstreetmap.org/search?format=json&q=${query}` //söker efter sökordet på nominatim
   );
-  const data = await response.json();
-  return data;
+  const data = await response.json(); //tar emot datan
+  return data; //returnerar datan/svaret från nominatim
+}
+
+/**
+ * Kopplar ihop sökfältet med kartan
+ */
+async function displayMap() {
+  const searchWord = document.getElementById("searchInput").value; // Hämtar sökordet från användaren
+  const data = await fetchMap(searchWord); // skickar sökordet till min funktion fetchMap och får tillbaka koordinaterna från nominatim
+
+  if (data.length > 0) {
+    const { lat, lon } = data[0]; // Plockar ut koordinaterna
+    const map = document.getElementById("mapIframe");
+    // Uppdaterar kartan
+    map.src = `https://www.openstreetmap.org/export/embed.html?bbox=${lon},${lat},${lon},${lat}&layer=mapnik&marker=${lat},${lon}`;
+  }
 }
