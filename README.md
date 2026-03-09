@@ -10,11 +10,11 @@ Detta har jag gjort:
 
 Hämtat och sorterat statistik: Jag har skrivit en funktion som hämtar aktuell utbildningsstatistik från en extern JSON-fil med hjälp av fetch. Jag har sedan filtrerat och sorterat ut de mest sökta kurserna och programmen för att få fram rätt data.
 
-Visualiserat med diagram: För att göra siffrorna lättare att förstå har jag använt biblioteket Chart.js. Jag har skapat ett stapeldiagram för kurser och ett cirkeldiagram för program, där jag kopplat JavaScript-koden till <canvas>-element i min HTML.
+"Redovisat" med diagram: För att göra siffrorna lättare att förstå har jag använt biblioteket Chart.js. Jag har skapat ett stapeldiagram för kurser och ett cirkeldiagram för program, där jag kopplat JavaScript-koden till <canvas>-element i min HTML.
 
-Skapat en interaktiv karta: Jag har byggt en sökfunktion där användaren kan skriva in en plats. Genom att skicka sökordet till Nominatim API hämtar jag koordinater (latitud och longitud) som jag sedan använder för att uppdatera en karta i en <iframe>.
+Skapat en interaktiv karta: Jag har byggt en sökfunktion där användaren kan skriva in en plats. Genom att skicka sökordet till Nominatim API hämtar jag koordinater (latitud och longitud) som jag sedan använder för att uppdatera min karta.
 
-Dokumentation: Jag har använt JSDoc för att dokumentera mina funktioner. Det innebär att jag har lagt till kommentarer som beskriver vad funktionerna gör, vad de tar emot för information och vad de lämnar ifrån sig.
+Dokumentation: Jag har använt JSDoc för att dokumentera mina funktioner.
 
 Laboration 3 och 4
 
