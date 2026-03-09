@@ -121,11 +121,11 @@ async function displayData() {
 
   //CIRKEL DIAGRAM
 
-  // 1. Packa upp namnen och siffrorna för programmen
+  //Packa upp namnen och siffrorna för programmen
   const programNames = topFivePrograms.map((p) => p.name);
   const programApplicants = topFivePrograms.map((p) => p.applicantsTotal);
 
-  // 2. Skriver ur diagrammet ska "se ut"
+  //Skriver hur diagrammet ska "se ut"
   const pieConfig = {
     type: "pie", // Cirkeldiagram
     data: {
@@ -177,7 +177,9 @@ async function displayMap() {
   const data = await fetchMap(searchWord); // skickar sökordet till min funktion fetchMap och får tillbaka koordinaterna från nominatim
 
   if (data.length > 0) {
-    const { lat, lon } = data[0]; // Plockar ut koordinaterna
+    // Hämtar latitud och longitud från det första objektet i listan
+    const lat = data[0].lat;
+    const lon = data[0].lon; // Plockar ut koordinaterna
     const map = document.getElementById("mapIframe");
     // Uppdaterar kartan
     map.src = `https://www.openstreetmap.org/export/embed.html?bbox=${lon},${lat},${lon},${lat}&layer=mapnik&marker=${lat},${lon}`;

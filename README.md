@@ -1,8 +1,22 @@
-Laboration 3 och 4
+Laboration 5
 
 Länk till min publicerade sida:
 
 https://labb-3.onrender.com/
+
+I den här uppgiften har jag skapat två sidor under flikarna "Karta" och "Diagram, som hämtar och presenterar data på två olika sätt.
+
+Detta har jag gjort:
+
+Hämtat och sorterat statistik: Jag har skrivit en funktion som hämtar aktuell utbildningsstatistik från en extern JSON-fil med hjälp av fetch. Jag har sedan filtrerat och sorterat ut de mest sökta kurserna och programmen för att få fram rätt data.
+
+Visualiserat med diagram: För att göra siffrorna lättare att förstå har jag använt biblioteket Chart.js. Jag har skapat ett stapeldiagram för kurser och ett cirkeldiagram för program, där jag kopplat JavaScript-koden till <canvas>-element i min HTML.
+
+Skapat en interaktiv karta: Jag har byggt en sökfunktion där användaren kan skriva in en plats. Genom att skicka sökordet till Nominatim API hämtar jag koordinater (latitud och longitud) som jag sedan använder för att uppdatera en karta i en <iframe>.
+
+Dokumentation: Jag har använt JSDoc för att dokumentera mina funktioner. Det innebär att jag har lagt till kommentarer som beskriver vad funktionerna gör, vad de tar emot för information och vad de lämnar ifrån sig.
+
+Laboration 3 och 4
 
 (Laboration 3)
 I denna laboration har jag fokuserat på att lära mig SASS:
